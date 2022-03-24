@@ -1,0 +1,43 @@
+.grid-container {
+  display: grid;
+  padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .grid-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.grid-item {
+  background-color: white;
+  border: 5px solid red;
+  margin: 20px;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+h1 {
+  font-size: xx-large;
+  text-align: center;
+  color: red;
+  font-weight: 700px;
+}
+section {
+  justify-content: center;
+  align-content: center;
+
+  @media only screen and (max-width: 500px) {
+    background-color: green;
+  }
+}
